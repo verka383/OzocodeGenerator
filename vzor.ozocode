@@ -1,0 +1,24 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block type="ozobot_go_to_next_intersection" id="1">
+		<next>
+			<block type="ozobot_choose_way_at_intersection" id="2">
+				<field name="DIRECTION">DIRECTION_LEFT</field>
+				<next>
+					<block type="ozobot_choose_way_at_intersection" id="3">
+						<field name="DIRECTION">DIRECTION_RIGHT</field>
+						<next>
+							<block type="ozobot_choose_way_at_intersection" id="4">
+								<field name="DIRECTION">DIRECTION_FORWARD</field>
+								<next>
+									<block type="ozobot_choose_way_at_intersection" id="5">
+										<field name="DIRECTION">DIRECTION_BACKWARD</field>
+									</block>
+								</next>
+							</block>
+						</next>
+					</block>
+				</next>
+			</block>
+		</next>
+	</block>
+</xml>

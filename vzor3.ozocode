@@ -1,0 +1,40 @@
+﻿<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block type="ozobot_evo_say_colour" id="qlWltIUs5Aw2m9]n^$h0" x="226" y="61">
+		<value name="VALUE">
+			<block type="system_get_surface_color" id="r}pSlv]7TqeS52PN::+F"></block>
+		</value>
+		<next>
+			<block type="ozobot_evo_say_direction_with_dropdown" id="Zlm7e[7o)4v3M/ArX9|7">
+				<field name="VALUE">2</field>
+				<next>
+					<block type="ozobot_evo_say_number" id="{sR0@caAcTy?LN./UXMX">
+						<value name="VALUE">
+							<block type="math_number" id="l?UYOr4b?lp0`GDs_jW$">
+								<field name="NUM">1</field>
+							</block>
+						</value>
+						<next>
+							<block type="ozobot_LED_colour_picker" id="BY}^L7qyg3pXiYVvRwl}">
+								<field name="COLOUR">#ff0000</field>
+								<next>
+									<block type="ozobot_LED_colour_picker" id="pOzzj2kUAAq:nPhqY7PA">
+										<field name="COLOUR">#ffff00</field>
+										<next>
+											<block type="ozobot_LED_colour_picker" id="mgnf-LeMxR#(YfY}bBRl">
+												<field name="COLOUR">#0000ff</field>
+												<next>
+													<block type="system_turn_off_leds" id="ZgovHPA3I6tMu*.oNQ/">
+													</block>
+												</next>
+											</block>
+										</next>
+									</block>
+								</next>
+							</block>
+						</next>
+					</block>
+				</next>
+			</block>
+		</next>
+	</block>
+</xml>

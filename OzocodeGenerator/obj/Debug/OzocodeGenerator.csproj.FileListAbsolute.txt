@@ -1,0 +1,13 @@
+C:\Users\Věra\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\bin\Debug\OzocodeGenerator.exe.config
+C:\Users\Věra\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\bin\Debug\OzocodeGenerator.exe
+C:\Users\Věra\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\bin\Debug\OzocodeGenerator.pdb
+C:\Users\Věra\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.csprojResolveAssemblyReference.cache
+C:\Users\Věra\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.exe
+C:\Users\Věra\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.pdb
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\bin\Debug\OzocodeGenerator.exe.config
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\bin\Debug\OzocodeGenerator.exe
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\bin\Debug\OzocodeGenerator.pdb
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.csprojResolveAssemblyReference.cache
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.exe
+C:\Users\VSk\OneDrive\MFF UK\MGR\1. ročník\Domácí úkoly\Seminář z umělé inteligence II\OzocodeGenerator\OzocodeGenerator\obj\Debug\OzocodeGenerator.pdb
