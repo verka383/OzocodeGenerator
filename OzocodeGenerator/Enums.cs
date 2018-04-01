@@ -9,22 +9,22 @@ namespace OzocodeGenerator
     enum BlockType
     {
         ozobot_go_to_next_intersection, ozobot_choose_way_at_intersection, ozobot_stopMotors, ozobot_evo_say_colour, system_get_surface_color, ozobot_evo_say_direction_with_dropdown,
-        ozobot_LED_colour_picker, system_turn_off_leds
+        ozobot_LED_colour_picker, system_turn_off_leds, system_delay, math_number
     }
 
     enum FieldName
     {
-        DIRECTION, VALUE, COLOUR
+        DIRECTION, VALUE, COLOUR, NUM
     }
 
     enum DIRECTION
     {
-        DIRECTION_LEFT = 2, DIRECTION_RIGHT = 4, DIRECTION_FORWARD = 1, DIRECTION_BACKWARD = 8
+        DIRECTION_LEFT = 2, DIRECTION_RIGHT = 4, DIRECTION_FORWARD = 1, DIRECTION_BACKWARD = 8, WAIT = 0
     }
 
     enum ValueName
     {
-        VALUE
+        VALUE, TIME_DELAY
     }
 
     /// <summary>

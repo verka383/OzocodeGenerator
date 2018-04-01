@@ -55,7 +55,16 @@ namespace OzocodeGenerator
             // main loop for changing the direction according to the input
             while((line = sr.ReadLine()) != null)
             {
-                Turns.turnAndContinueToJunction(((DIRECTION)Enum.Parse(typeof(DIRECTION), line)).ToString(), true);                
+                if (line == ((int)DIRECTION.WAIT).ToString())
+                {
+                    Turns.wait();
+                    Turns.wait();
+                    Turns.wait();
+                }
+                else
+                {
+                    Turns.turnAndContinueToJunction(((DIRECTION)Enum.Parse(typeof(DIRECTION), line)).ToString(), true);
+                }
             }
 
             Basics.next();
