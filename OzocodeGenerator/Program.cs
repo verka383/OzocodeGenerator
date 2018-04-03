@@ -49,6 +49,7 @@ namespace OzocodeGenerator
 
             Basics.xml();
             Basics.block(BlockType.ozobot_go_to_next_intersection, ID++);
+            Light.setTopLightColour(LightColors.xffffff);
 
             string line;
 
@@ -57,9 +58,13 @@ namespace OzocodeGenerator
             {
                 if (line == ((int)DIRECTION.WAIT).ToString())
                 {
+                    Light.setTopLightColour(LightColors.xff0000);
                     Turns.wait();
+                    Light.setTopLightColour(LightColors.xffff00);
                     Turns.wait();
+                    Light.setTopLightColour(LightColors.x00ff00);
                     Turns.wait();
+                    Light.setTopLightColour(LightColors.xffffff);
                 }
                 else
                 {
