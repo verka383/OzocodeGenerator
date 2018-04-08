@@ -9,12 +9,13 @@ namespace OzocodeGenerator
     enum BlockType
     {
         ozobot_go_to_next_intersection, ozobot_choose_way_at_intersection, ozobot_stopMotors, ozobot_evo_say_colour, system_get_surface_color, ozobot_evo_say_direction_with_dropdown,
-        ozobot_LED_colour_picker, system_turn_off_leds, system_delay, math_number
+        ozobot_LED_colour_picker, system_turn_off_leds, system_delay, math_number, variables_set, controls_whileUntil, logic_operation, logic_compare, ozobot_evo_read_proximity_sensor,
+        variables_get
     }
 
     enum FieldName
     {
-        DIRECTION, VALUE, COLOUR, NUM
+        DIRECTION, VALUE, COLOUR, NUM, VAR, MODE, OP, REGISTER
     }
 
     enum DIRECTION
@@ -24,7 +25,7 @@ namespace OzocodeGenerator
 
     enum ValueName
     {
-        VALUE, TIME_DELAY
+        VALUE, TIME_DELAY, BOOL, A, B
     }
 
     /// <summary>
@@ -33,5 +34,20 @@ namespace OzocodeGenerator
     enum LightColors
     {
         xffffff, xffff00, x8000ff, x00ffff, x80ff00, xff8000, xff00ff, x0080ff, x00ff00, xff0000, xff0077, x0000ff
+    }
+
+    enum Variables
+    {
+        x
+    }
+
+    enum FieldMode
+    {
+        WHILE
+    }
+
+    enum Sensors
+    {
+        LF, RF
     }
 }

@@ -12,7 +12,7 @@ namespace OzocodeGenerator
         {
             Basics.next();
             Basics.block(BlockType.ozobot_evo_say_colour, Program.ID++);
-            Basics.value(ValueName.VALUE);   
+            Basics.GetSurfaceColorValue(ValueName.VALUE);   
         }
 
         public static void sayDirection(DIRECTION direction)

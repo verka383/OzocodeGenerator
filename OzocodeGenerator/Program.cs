@@ -31,7 +31,16 @@ namespace OzocodeGenerator
 
         static void Main(string[] args)
         {
-            generateCode("input.txt", "output.ozocode");
+            int[] input = { 1, 2, 3, 4, 5, 6, 9, 10, 12, 13, 14, 15 };
+
+            for (int i = 0; i < 1; i++)
+            {
+                generateCode("../../../../TestCases/CBSOutputs/Res" + input[i] + "-0.txt", "../../../../TestCases/GeneratorOutputs/Code" + input[i] + "-0.txt");
+                generateCode("../../../../TestCases/CBSOutputs/Res" + input[i] + "-1.txt", "../../../../TestCases/GeneratorOutputs/Code" + input[i] + "-1.txt");
+                Console.WriteLine("Code {0} generated.", i);
+            }
+
+            //generateCode("input.txt", "output.ozocode");
 
             //colorsTest("input.txt", "output.ozocode");
         }
@@ -48,6 +57,8 @@ namespace OzocodeGenerator
             tagsEnds = new Stack<string>();
 
             Basics.xml();
+            Basics.setVariable(Variables.x, 1.ToString());
+            Basics.next();
             Basics.block(BlockType.ozobot_go_to_next_intersection, ID++);
             Light.setTopLightColour(LightColors.xffffff);
 
