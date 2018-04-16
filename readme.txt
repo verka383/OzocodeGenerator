@@ -11,6 +11,7 @@ Program.cs
 	- 2 = LEFT
 	- 4 = RIGHT
 	- 8 = BACKWARD
+	- 0 = WAIT
 
 Basics.cs
 - functions for generating basic blocks

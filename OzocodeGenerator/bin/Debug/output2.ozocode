@@ -1,0 +1,88 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block type="arrays_declaration" id="1">
+		<field name="NAME">cesty</field>
+		<field name="SIZE">6</field>
+	</block>
+	<block type="arrays_set_element" id="2">
+		<field name="NAME">cesty</field>
+		<value name="INDEX">
+			<block type="math_number" id="3">
+				<field name="NUM">0</field>
+			</block>
+		</value>
+		<value name="VALUE">
+			<block type="math_number" id="4">
+				<field name="NUM">1</field>
+			</block>
+		</value>
+	</block>
+	<next>
+		<block type="arrays_set_element" id="5">
+			<field name="NAME">cesty</field>
+			<value name="INDEX">
+				<block type="math_number" id="6">
+					<field name="NUM">1</field>
+				</block>
+			</value>
+			<value name="VALUE">
+				<block type="math_number" id="7">
+					<field name="NUM">1</field>
+				</block>
+			</value>
+		</block>
+		<next>
+			<block type="arrays_set_element" id="8">
+				<field name="NAME">cesty</field>
+				<value name="INDEX">
+					<block type="math_number" id="9">
+						<field name="NUM">2</field>
+					</block>
+				</value>
+				<value name="VALUE">
+					<block type="math_number" id="10">
+						<field name="NUM">2</field>
+					</block>
+				</value>
+			</block>
+			<next>
+				<block type="arrays_set_element" id="11">
+					<field name="NAME">cesty</field>
+					<value name="INDEX">
+						<block type="math_number" id="12">
+							<field name="NUM">3</field>
+						</block>
+					</value>
+					<value name="VALUE">
+						<block type="math_number" id="13">
+							<field name="NUM">8</field>
+						</block>
+					</value>
+				</block>
+				<next>
+					<block type="arrays_set_element" id="14">
+						<field name="NAME">cesty</field>
+						<value name="INDEX">
+							<block type="math_number" id="15">
+								<field name="NUM">4</field>
+							</block>
+						</value>
+						<value name="VALUE">
+							<block type="math_number" id="16">
+								<field name="NUM">2</field>
+							</block>
+						</value>
+					</block>
+					<next>
+					<block type="arrays_set_element" id="17">
+						<field name="NAME">cesty</field>
+						<value name="INDEX">
+							<block type="math_number" id="18">
+								<field name="NUM">5</field>
+							</block>
+						</value>
+						<value name="VALUE">
+							<block type="math_number" id="19">
+								<field name="NUM">1</field>
+							</block>
+						</value>
+					</block>

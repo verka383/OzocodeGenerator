@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays.cs" />
     <Compile Include="Basics.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Light.cs" />

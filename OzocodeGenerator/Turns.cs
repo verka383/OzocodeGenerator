@@ -15,6 +15,15 @@ namespace OzocodeGenerator
         /// <param name="debug">If true, the ozobot says the turned direction.</param>
         public static void turn(string direction, bool debug = false)
         {
+            if (direction == DIRECTION.DIRECTION_LEFT.ToString() || direction == DIRECTION.DIRECTION_RIGHT.ToString())
+            {
+                wait(80);
+            }
+            else if (direction == DIRECTION.DIRECTION_FORWARD.ToString())
+            {
+                wait(80);
+                wait(80);
+            }
             Basics.next();
             Basics.block(BlockType.ozobot_choose_way_at_intersection, Program.ID++);
             Basics.field(FieldName.DIRECTION, direction);
@@ -40,13 +49,13 @@ namespace OzocodeGenerator
         /// <summary>
         /// Implemenation of waiting for 120 seconds.
         /// </summary>
-        public static void wait()
+        public static void wait(int time)
         {
             Basics.next();
             Basics.block(BlockType.system_delay, Program.ID++);
             Program.sw.Write("<value name=\"{0}\">", ValueName.TIME_DELAY);
             Program.sw.Write("<block type=\"{0}\" id=\"{1}\">", BlockType.math_number, Program.ID++);
-            Basics.field(FieldName.NUM, 120.ToString());
+            Basics.field(FieldName.NUM, time.ToString());
             Program.sw.Write("</block>");
             Program.sw.Write("</value>");
         }

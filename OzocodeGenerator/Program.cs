@@ -33,14 +33,16 @@ namespace OzocodeGenerator
         {
             int[] input = { 1, 2, 3, 4, 5, 6, 9, 10, 12, 13, 14, 15 };
 
-            for (int i = 0; i < 1; i++)
+            /*for (int i = 0; i < 1; i++)
             {
                 generateCode("../../../../TestCases/CBSOutputs/Res" + input[i] + "-0.txt", "../../../../TestCases/GeneratorOutputs/Code" + input[i] + "-0.txt");
                 generateCode("../../../../TestCases/CBSOutputs/Res" + input[i] + "-1.txt", "../../../../TestCases/GeneratorOutputs/Code" + input[i] + "-1.txt");
                 Console.WriteLine("Code {0} generated.", i);
-            }
+            }*/
 
             //generateCode("input.txt", "output.ozocode");
+
+            generateWithArray("input.txt", "output.ozocode");
 
             //colorsTest("input.txt", "output.ozocode");
         }
@@ -70,11 +72,11 @@ namespace OzocodeGenerator
                 if (line == ((int)DIRECTION.WAIT).ToString())
                 {
                     Light.setTopLightColour(LightColors.xff0000);
-                    Turns.wait();
+                    Turns.wait(120);
                     Light.setTopLightColour(LightColors.xffff00);
-                    Turns.wait();
+                    Turns.wait(120);
                     Light.setTopLightColour(LightColors.x00ff00);
-                    Turns.wait();
+                    Turns.wait(120);
                     Light.setTopLightColour(LightColors.xffffff);
                 }
                 else
@@ -89,6 +91,65 @@ namespace OzocodeGenerator
 
             sr.Close();
             sw.Close();
+        }
+
+        /// <summary>
+        /// Generates path for ozobot according to the directions in the input file.
+        /// Uses arrays and simple obstacle detection - moves one node back if the path forward
+        /// is not free.
+        /// </summary>
+        /// <param name="inputFile"></param>
+        /// <param name="outputFile"></param>
+        static void generateWithArray(string inputFile, string outputFile)
+        {
+            sr = new StreamReader(inputFile);
+            sw = new StreamWriter(outputFile);
+            tagsEnds = new Stack<string>();
+            List<int> values = new List<int>();
+
+            Basics.xml();
+            
+            string line;
+
+            // main loop for changing the direction according to the input
+            while ((line = sr.ReadLine()) != null)
+            {
+                values.Add(int.Parse(line));  
+            }
+
+            Arrays.ArrayDeclaration(values.Count);
+
+            copyFromFile("function.txt");
+
+            for (int i = 0; i < values.Count; i++)
+            {
+                Arrays.ArrayElementsSet(i, values[i]);
+                if (i != values.Count - 1)
+                {
+                    Basics.next();
+                }
+            }
+
+            copyFromFile("body.txt");
+            Basics.PopTagsEnds();
+
+            sr.Close();
+            sw.Close();
+        }
+
+        /// <summary>
+        /// Copies given file to the output file.
+        /// </summary>
+        /// <param name="fileName"></param>
+        public static void copyFromFile(string fileName)
+        {
+            StreamReader sr = new StreamReader(fileName);
+            string line;
+
+            while ((line = sr.ReadLine()) != null)
+            {
+                sw.WriteLine(line);
+            }
         }
 
         /// <summary>

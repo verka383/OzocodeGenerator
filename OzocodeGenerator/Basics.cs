@@ -80,11 +80,11 @@ namespace OzocodeGenerator
         /// <param name="name">VALUE</param>
         /// <param name="type">math_number</param>
         /// <param name="value">integer (in string format)</param>
-        public static void ValueWithMath(ValueName name, BlockType type, string value)
+        public static void ValueWithMath(ValueName name, BlockType type, string value, FieldName fn = FieldName.NUM)
         {
             Program.sw.Write("<value name=\"{0}\">", name);
             Program.sw.Write("<block type=\"{0}\" id=\"{1}\">", type, Program.ID++);
-            Basics.field(FieldName.NUM, value);
+            Basics.field(fn, value);
             Program.sw.Write("</block>");
             Program.sw.Write("</value>");
         }
