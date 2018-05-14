@@ -119,7 +119,7 @@ namespace OzocodeGenerator
 
             Arrays.ArrayDeclaration(values.Count);
 
-            copyFromFile("function.txt");
+            copyFromFile("codeParts/funkcesCom.ozocode");
 
             for (int i = 0; i < values.Count; i++)
             {
@@ -130,7 +130,9 @@ namespace OzocodeGenerator
                 }
             }
 
-            copyFromFile("body.txt");
+            //("codeParts/telosKom.ozocode");
+            copyFromFile("codeParts/telobezKom.ozocode");
+            //copyFromFile("codeParts/telobezDet.ozocode");
             Basics.PopTagsEnds();
 
             sr.Close();
