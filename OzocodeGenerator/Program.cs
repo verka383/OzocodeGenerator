@@ -32,8 +32,8 @@ namespace OzocodeGenerator
         static void Main(string[] args)
         {
             int[] input = { 1, 2, 3, 4, 5, 6, 9, 10, 12, 13, 14, 15 };
-
-            /*for (int i = 0; i < 1; i++)
+            /*
+            for (int i = 0; i < 1; i++)
             {
                 generateCode("../../../../TestCases/CBSOutputs/Res" + input[i] + "-0.txt", "../../../../TestCases/GeneratorOutputs/Code" + input[i] + "-0.txt");
                 generateCode("../../../../TestCases/CBSOutputs/Res" + input[i] + "-1.txt", "../../../../TestCases/GeneratorOutputs/Code" + input[i] + "-1.txt");
@@ -42,7 +42,10 @@ namespace OzocodeGenerator
 
             //generateCode("input.txt", "output.ozocode");
 
-            generateWithArray("input.txt", "output.ozocode");
+            generateWithArray(@"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning/1.txt0.txt", @"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning\1\0.ozocode");
+            generateWithArray(@"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning/1.txt1.txt", @"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning\1\1.ozocode");
+            generateWithArray(@"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning/1.txt2.txt", @"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning\1\2.ozocode");
+            generateWithArray(@"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning/1.txt3.txt", @"C:\Users\VSk\OneDrive\MFF UK\MGR\OzobotiClanek\OzobotiClanek\bin\Debug\clanek\turning\1\3.ozocode");
 
             //colorsTest("input.txt", "output.ozocode");
         }
@@ -50,7 +53,7 @@ namespace OzocodeGenerator
         /// <summary>
         /// Generates path for ozobot according to the directions in the input file.
         /// </summary>
-        /// <param name="inputFile">Input file (should be text file)</param>
+        /// <param name="inputFile">Input file (should be text file)</param
         /// <param name="outputFile">Output file (should have suffix .ozocode)</param>
         static void generateCode(string inputFile, string outputFile)
         {
@@ -131,8 +134,10 @@ namespace OzocodeGenerator
             }
 
             //("codeParts/telosKom.ozocode");
-            copyFromFile("codeParts/telobezKom.ozocode");
+            //copyFromFile("codeParts/telobezKom.ozocode");
             //copyFromFile("codeParts/telobezDet.ozocode");
+            //copyFromFile("codeParts/telobezOtocek.ozocode");
+            copyFromFile("codeParts/turningexample.ozocode");
             Basics.PopTagsEnds();
 
             sr.Close();
